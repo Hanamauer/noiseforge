@@ -143,4 +143,4 @@ noiseforge/
 
 本项目代码 MIT（见 `LICENSE`）。构建依赖的 [VST3 SDK](https://github.com/steinbergmedia/vst3sdk) 不在仓库内，使用时需遵守 Steinberg 的 VST 3 许可。
 
-“Vital” 是 Xfer Records 的产品名；本项目的波表设计只在概念上参考其 wavetable/frame 思路，未使用其代码，也不含其商标素材。
+“Vital” 是的产品名；本项目的波表设计只在概念上参考其 wavetable/frame 思路，未使用其代码，也不含其商标素材。
