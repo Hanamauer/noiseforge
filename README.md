@@ -4,28 +4,7 @@ NOISEFORGE
 
 安装
 把 dist\NoiseForge.vst3 整个文件夹复制到：
-
-代码块
-
-
-C:\Program Files\Common Files\VST3\
-或任何宿主扫描的 VST3 目录。在宿主里它以 NoiseForge 出现在"乐器 / Generators"分类下（Instrument | Synth），可以直接用钢琴卷帘触发。
-
-构建
-需要 MSYS2 的 MinGW-w64 g++（C:\msys64\mingw64\bin），无 CMake：
-
-powershell
-
-
-powershell -ExecutionPolicy Bypass -File build.ps1            # 插件 + 全部测试
-powershell -ExecutionPolicy Bypass -File build.ps1 -ToolsOnly # 只构建自测工具
-构建脚本会依次运行：
-
-build\selftest.exe —— 引擎离线自测（15 项检查）
-链接 NoiseForge.vst3
-build\host_test.exe —— 以宿主方式加载 DLL，检查工厂 / 总线 / 参数 / MIDI / 状态 / 编辑器（35 项检查）
-build\gui_render.exe —— 离线渲染面板到 docs\noiseforge_ui.png，并验证缩放、隐藏/显示和编辑器重载后仍能正常绘制
-注意：运行任何测试 exe 前需要 $env:PATH='C:\msys64\mingw64\bin;'+$env:PATH，否则缺 DLL 返回 -1073741515。
+C:\Program Files\Common Files\VST3或任何宿主扫描的 VST3 目录。在宿主里它以 NoiseForge 出现在"乐器 / Generators"分类下（Instrument | Synth），可以直接用钢琴卷帘触发。
 
 三个音源
 HARSH NOISE —— 粗噪音（宽带）
